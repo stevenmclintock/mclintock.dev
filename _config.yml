@@ -1,0 +1,102 @@
+# Site settings
+baseurl: ''
+url: 'https://www.kiltandcode.com'
+title: 'Kilt and Code'
+description: 'The personal website of Steven McLintock'
+author: 'Steven McLintock'
+
+# Build settings
+permalink: /:year/:month/:day/:title/
+plugins: [ jekyll-sitemap, jekyll-feed, jekyll-seo-tag ]
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  style: compressed
+
+# Stylesheets
+stylesheets:
+  - '/css/stylesheet.css'
+  - '/css/syntax.css'
+  - '/css/carbon-ads.css'
+
+# Google Analytics
+google-analytics:
+  enabled: true
+  id: 'UA-140918235-1'
+
+# The primary language used by the website
+language: 'en'
+
+# Favicon and icons for iOS, Android
+# These should ideally be located in the root directory
+apple-touch-icon: '/apple-touch-icon.png'
+favicon-32: '/favicon-32x32.png'
+favicon-16: '/favicon-16x16.png'
+site-manifest: '/site.webmanifest'
+
+# The logo motif
+logo-motif:
+  enabled: true
+  src: '/assets/img/cartoon-scottish-face.png'
+  width: '83'
+  height: '90'
+
+# The logo title
+logo-title:
+  enabled: true
+
+# Header menu
+header-menu:
+- { name: 'Home', url: '/' }
+- { name: 'About', url: '/about' }
+- { name: 'Articles', url: '/articles' }
+
+# Footer menu
+footer-menu:
+- { name: 'Home', url: '/' }
+- { name: 'About', url: '/about' }
+- { name: 'Articles', url: '/articles' }
+- { name: 'RSS', url: '/feed.xml' }
+
+# Homepage
+homepage:
+  header-text: 'Kilt and Code is the personal website of Steven McLintock'
+  intro-text: '<a href="/about">Steven McLintock</a> is a Scottish full stack developer based in 
+              <a href="https://en.wikipedia.org/wiki/Stratford,_Ontario">Stratford, Ontario</a>. 
+              I enjoy writing about the things I learn, primarily on the languages and frameworks 
+              I use on a daily basis. You can also read about 
+              <a href="/2020/02/16/my-journey-to-becoming-a-full-stack-developer/">my journey to becoming a full stack developer</a>, 
+              <a href="/2019/06/30/coming-to-canada-immigrating-to-toronto-as-a-dotnet-developer/">immigrating to Toronto as a .NET developer</a> 
+              and more in the <a href="/articles">archives</a>.'
+  intro-image: 'cartoon-scottish-developer.png'
+  latest-articles-enabled: true
+  latest-articles-title-text: 'Latest Articles'
+  latest-articles-link-enabled: true
+  latest-articles-link-url: '/articles'
+  latest-articles-link-text: 'View all articles'
+
+# Articles
+articles:
+  header-text: 'All Articles'
+  excerpt-enabled: true
+  read-more-enabled: true
+  read-more-text: 'Read more'
+
+# Post Icons
+icons:
+  enabled: true
+
+# Related posts (only works if you use tags)
+related-posts:
+  enabled: true
+  header-text: 'More articles like this...'
+  limit: 3
+  no-related-articles-text: 'We couldn''t find any similar articles!'
+
+# Written on (post info displayed underneath the H1)
+written-on:
+  enabled: true
+  by-text: 'By'
+  on-text: 'on'
